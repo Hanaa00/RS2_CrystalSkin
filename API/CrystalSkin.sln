@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".solution-items", ".solution-items", "{E0BB6592-AF14-4441-835E-DCBE099DEA17}"
+	ProjectSection(SolutionItems) = preProject
+		CrystalSkin.Api\docker-compose.yml = CrystalSkin.Api\docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrystalSkin.Services", "CrystalSkin.Services\CrystalSkin.Services.csproj", "{95C1FB95-561C-4F50-9B9D-903679FE0544}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrystalSkin.Core", "CrystalSkin.Core\CrystalSkin.Core.csproj", "{19269A6E-57F3-4C84-BC65-D235B75D3CA0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrystalSkin.Api", "CrystalSkin.Api\CrystalSkin.Api.csproj", "{65021692-96F0-4EC5-A055-134B6EB07EBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrystalSkin.Shared", "CrystalSkin.Shared\CrystalSkin.Shared.csproj", "{2252DE98-8FC0-47E3-8A8E-F3F6C6713C1C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CrystalSkin.Subscriber", "CrystalSkin.Subscriber\CrystalSkin.Subscriber.csproj", "{3E675A38-3DF5-4CC0-8704-828DFA8DBEDE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{95C1FB95-561C-4F50-9B9D-903679FE0544}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95C1FB95-561C-4F50-9B9D-903679FE0544}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95C1FB95-561C-4F50-9B9D-903679FE0544}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95C1FB95-561C-4F50-9B9D-903679FE0544}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19269A6E-57F3-4C84-BC65-D235B75D3CA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19269A6E-57F3-4C84-BC65-D235B75D3CA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19269A6E-57F3-4C84-BC65-D235B75D3CA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19269A6E-57F3-4C84-BC65-D235B75D3CA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65021692-96F0-4EC5-A055-134B6EB07EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65021692-96F0-4EC5-A055-134B6EB07EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65021692-96F0-4EC5-A055-134B6EB07EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65021692-96F0-4EC5-A055-134B6EB07EBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2252DE98-8FC0-47E3-8A8E-F3F6C6713C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2252DE98-8FC0-47E3-8A8E-F3F6C6713C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2252DE98-8FC0-47E3-8A8E-F3F6C6713C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2252DE98-8FC0-47E3-8A8E-F3F6C6713C1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3E675A38-3DF5-4CC0-8704-828DFA8DBEDE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3E675A38-3DF5-4CC0-8704-828DFA8DBEDE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3E675A38-3DF5-4CC0-8704-828DFA8DBEDE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3E675A38-3DF5-4CC0-8704-828DFA8DBEDE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0C7B143E-02A1-46DD-9BF6-60F9BB62DA72}
+	EndGlobalSection
+EndGlobal

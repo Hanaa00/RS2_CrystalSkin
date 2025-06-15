@@ -1,0 +1,8 @@
+﻿namespace CrystalSkin.Core;
+
+public enum PaymentType
+{
+    Card = 1,
+    PayPal = 2,
+    BankTransfer = 3
+}

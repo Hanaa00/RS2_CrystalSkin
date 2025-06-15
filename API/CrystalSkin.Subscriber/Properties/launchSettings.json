@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "CrystalSkin.Subscriber": {
+      "commandName": "Project"
+    },
+    "Docker": {
+      "commandName": "Docker"
+    }
+  }
+}

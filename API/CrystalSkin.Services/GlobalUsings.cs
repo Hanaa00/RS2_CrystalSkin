@@ -1,0 +1,23 @@
+﻿global using AutoMapper;
+global using CrystalSkin.Core;
+global using CrystalSkin.Core.Models;
+global using CrystalSkin.Core.SearchObjects;
+global using CrystalSkin.Services.Database;
+global using CrystalSkin.Services.Extensions;
+global using CrystalSkin.Services.Validators;
+global using CrystalSkin.Core.Models.Service;
+global using CrystalSkin.Services.Services.ServicesService;
+global using CrystalSkin.Shared;
+global using FluentValidation;
+global using Microsoft.AspNetCore.Identity;
+global using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Microsoft.Extensions.Configuration;
+global using Microsoft.Extensions.DependencyInjection;
+global using Newtonsoft.Json;
+global using RabbitMQ.Client;
+global using System.Linq.Expressions;
+global using System.Text;
+global using CrystalSkin.Core.Entities;
+

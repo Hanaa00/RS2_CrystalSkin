@@ -1,0 +1,79 @@
+services:
+  postgres:
+    image: postgres:latest
+    restart: unless-stopped
+    environment:
+      - POSTGRES_DB=crystal_skin_docker_v1
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=crystalskin123
+    ports:
+      - 5000:5432
+    networks:
+      - crystalskinnet
+
+  rabbitMQ:
+    image: rabbitmq:3-management
+    container_name: 'rabbitmqcontainer'
+    environment:
+      - RABBITMQ_DEFAULT_USER=guest
+      - RABBITMQ_DEFAULT_PASS=guest
+    ports:
+      - 5672:5672
+    expose:
+      - 5672
+    networks:
+      - crystalskinnet
+
+  rabbitmq-service:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: CrystalSkin.Subscriber\Dockerfile
+    environment:
+      - RABBITMQ_HOST=rabbitMQ
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USERNAME=guest
+      - RABBITMQ_PASSWORD=guest
+      - SMTP_SERVER=smtp.gmail.com
+      - SMTP_PORT=587
+      - SMTP_USERNAME=crystal.skin.app@gmail.com
+      - SMTP_PASSWORD=drbg yllp edtx cxhz
+      - ENABLE_SSL=true
+      - MAIL_TIMEOUT=10000
+      - MAIL_FROM_ADDRESS=no-replay@crystal_skin.ba
+      - MAIL_DISPLAY_NAME=crystal_skin.ba
+    depends_on:
+      - rabbitMQ
+      - postgres
+    networks:
+      - crystalskinnet
+
+  api:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: CrystalSkin.Api\Dockerfile
+    environment:
+      - ConnectionStrings_Main=Host=postgres;Port=5432;Database=crystal_skin_docker_v1;Username=postgres;Password=crystalskin123;Pooling=true
+      - RABBITMQ_HOST=rabbitMQ
+      - RABBITMQ_PORT=5672
+      - RABBITMQ_USERNAME=guest
+      - RABBITMQ_PASSWORD=guest
+      - SMTP_SERVER=smtp.gmail.com
+      - SMTP_PORT=587
+      - SMTP_USERNAME=crystal.skin.app@gmail.com
+      - SMTP_PASSWORD=drbg yllp edtx cxhz
+      - ENABLE_SSL=true
+      - MAIL_TIMEOUT=10000
+      - MAIL_FROM_ADDRESS=no-replay@crystal_skin.ba
+      - MAIL_DISPLAY_NAME=crystal_skin.ba
+    ports:
+      - 5100:80
+    networks:
+      - crystalskinnet
+    depends_on:
+      - postgres
+
+networks:
+  crystalskinnet:
+    driver: bridge
