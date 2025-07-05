@@ -1,6 +1,6 @@
 ﻿namespace CrystalSkin.Api.Controllers;
 
-//[Authorize(AuthenticationSchemes = "Bearer")]
+[Authorize(AuthenticationSchemes = "Bearer")]
 public class NotificationsController : BaseCrudController<NotificationModel, NotificationUpsertModel, NotificationsSearchObject, INotificationsService>
 {
     public NotificationsController(
