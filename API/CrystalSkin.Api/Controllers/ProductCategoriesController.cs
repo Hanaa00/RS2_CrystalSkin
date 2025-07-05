@@ -1,6 +1,6 @@
 ﻿namespace CrystalSkin.Api.Controllers;
 
-//[Authorize(AuthenticationSchemes = "Bearer")]
+[Authorize(AuthenticationSchemes = "Bearer")]
 public class ProductCategoriesController : BaseCrudController<ProductCategoryModel, ProductCategoryUpsertModel, BaseSearchObject, IProductCategoriesService>
 {
     public ProductCategoriesController(
