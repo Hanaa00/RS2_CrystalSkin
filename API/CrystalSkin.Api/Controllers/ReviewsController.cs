@@ -1,6 +1,6 @@
 ﻿namespace CrystalSkin.Api.Controllers;
 
-//[Authorize(AuthenticationSchemes = "Bearer")]
+[Authorize(AuthenticationSchemes = "Bearer")]
 public class ReviewsController : BaseCrudController<ReviewModel, ReviewUpsertModel, BaseSearchObject, IReviewsService>
 {
     public ReviewsController(
