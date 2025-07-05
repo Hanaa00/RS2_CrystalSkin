@@ -1,6 +1,6 @@
 ﻿namespace CrystalSkin.Api.Controllers;
 
-//[Authorize(AuthenticationSchemes = "Bearer")]
+[Authorize(AuthenticationSchemes = "Bearer")]
 public class ProductsController : BaseCrudController<ProductModel, ProductUpsertModel, ProductSearchObject, IProductsService>
 {
     private readonly IFileManager _fileManager;
