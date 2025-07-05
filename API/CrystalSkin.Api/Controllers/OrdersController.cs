@@ -2,7 +2,7 @@
 
 namespace CrystalSkin.Api.Controllers;
 
-//[Authorize(AuthenticationSchemes = "Bearer")]
+[Authorize(AuthenticationSchemes = "Bearer")]
 public class OrdersController : BaseCrudController<OrderModel, OrderUpsertModel, OrderSearchObject, IOrdersService>
 {
     private readonly IOrdersService _service;
