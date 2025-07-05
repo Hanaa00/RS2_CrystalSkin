@@ -2,7 +2,7 @@
 
 namespace CrystalSkin.Api.Controllers;
 
-//[Authorize(AuthenticationSchemes = "Bearer")]
+[Authorize(AuthenticationSchemes = "Bearer")]
 public class AppointmentsController : BaseCrudController<AppointmentModel, AppointmentUpsertModel, AppointmentSearchObject, IAppointmentsService>
 {
     private readonly IAppointmentsService _service;
