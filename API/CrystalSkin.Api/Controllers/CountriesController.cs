@@ -1,6 +1,6 @@
 ﻿namespace CrystalSkin.Api.Controllers;
 
-//[Authorize(AuthenticationSchemes = "Bearer")]
+[Authorize(AuthenticationSchemes = "Bearer")]
 public class CountriesController : BaseCrudController<CountryModel, CountryUpsertModel, BaseSearchObject, ICountriesService>
 {
     public CountriesController(
