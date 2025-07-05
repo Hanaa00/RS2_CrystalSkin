@@ -1,6 +1,6 @@
 ﻿namespace CrystalSkin.Api.Controllers;
 
-//[Authorize(AuthenticationSchemes = "Bearer")]
+[Authorize(AuthenticationSchemes = "Bearer")]
 public class PaymentsController : BaseCrudController<PaymentModel, PaymentUpsertModel, BaseSearchObject, IPaymentsService>
 {
     public PaymentsController(
