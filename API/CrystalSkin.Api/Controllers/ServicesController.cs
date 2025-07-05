@@ -1,6 +1,6 @@
 ﻿namespace CrystalSkin.Api.Controllers;
 
-//[Authorize(AuthenticationSchemes = "Bearer")]
+[Authorize(AuthenticationSchemes = "Bearer")]
 public class ServicesController : BaseCrudController<ServiceModel, ServiceUpsertModel, BaseSearchObject, IServicesService>
 {
     public ServicesController(
