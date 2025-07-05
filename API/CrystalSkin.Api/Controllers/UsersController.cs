@@ -2,7 +2,7 @@
 
 namespace CrystalSkin.Api.Controllers;
 
-//[Authorize(AuthenticationSchemes = "Bearer")]
+[Authorize(AuthenticationSchemes = "Bearer")]
 public class UsersController : BaseCrudController<UserModel, UserUpsertModel, UsersSearchObject, IUsersService>
 {
     private readonly IFileManager _fileManager;
