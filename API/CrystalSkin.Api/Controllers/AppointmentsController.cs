@@ -1,6 +1,4 @@
-﻿using CrystalSkin.Services.Database;
-
-namespace CrystalSkin.Api.Controllers;
+﻿namespace CrystalSkin.Api.Controllers;
 
 [Authorize(AuthenticationSchemes = "Bearer")]
 public class AppointmentsController : BaseCrudController<AppointmentModel, AppointmentUpsertModel, AppointmentSearchObject, IAppointmentsService>

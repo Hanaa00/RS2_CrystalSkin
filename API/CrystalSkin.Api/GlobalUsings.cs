@@ -1,15 +1,16 @@
 ﻿global using AutoMapper;
 global using CrystalSkin.Core;
 global using CrystalSkin.Core.Models;
+global using CrystalSkin.Core.Models.Service;
 global using CrystalSkin.Core.SearchObjects;
 global using CrystalSkin.Services;
 global using CrystalSkin.Services.Database;
 global using CrystalSkin.Services.Mapping;
-global using CrystalSkin.Core.Models.Service;
 global using CrystalSkin.Services.Services.ServicesService;
 global using CrystalSkin.Shared;
 global using Microsoft.AspNetCore.Authentication.Cookies;
 global using Microsoft.AspNetCore.Authentication.JwtBearer;
+global using Microsoft.AspNetCore.Authorization;
 global using Microsoft.AspNetCore.Identity;
 global using Microsoft.AspNetCore.Mvc;
 global using Microsoft.EntityFrameworkCore;
